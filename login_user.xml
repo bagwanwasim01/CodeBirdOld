@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2f4f4f"
+    tools:context="com.example.wasim.compileit.UserLogin">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:gravity="center_horizontal"
+        android:text="@string/user_login"
+        android:textColor="#fff"
+        android:textSize="45dp" />
+
+    <EditText
+        android:id="@+id/ETname"
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="0dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        tools:ignore="LabelFor,RtlHardcoded"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Tpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleDrawable="@drawable/icon_selector"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorBlack"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/ETname"
+        android:layout_alignStart="@+id/ETname">  <!-- use hintAnimationEnabled to make floating hint label disable-->
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/Ipass"
+            android:layout_width="240dp"
+            android:layout_height="43dp"
+            android:layout_centerHorizontal="true"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:text="@string/login"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/Tpass"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

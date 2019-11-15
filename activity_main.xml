@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="56dp"
+    android:background="@android:color/black"
+    android:backgroundTint="?android:attr/textColorSecondaryNoDisable"
+    tools:context="com.example.wasim.compileit.Main2Activity">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent"></ScrollView>
+
+    <com.example.wasim.compileit.MyEditText
+        android:id="@+id/editor_area"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="#2f4f4f"
+        android:backgroundTint="#2f4f4f"
+        android:ellipsize="end"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="25"
+        android:minLines="15"
+        android:textStyle="normal"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:scrollbars="vertical"
+        android:textColor="#ffffff"
+        tools:ignore="RtlHardcoded"
+        android:layout_below="@+id/imageRotate"
+        android:layout_alignParentStart="true" />
+    <!--android:background="@drawable/rounded_editext"-->
+
+
+    <!--<requestFocus /> -->
+
+    <Spinner
+        android:id="@+id/spinner"
+        style="@style/Spinner"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SCROLLER_ID"
+        android:background="@drawable/shape_drop_down_normal"
+        android:gravity="left"
+        android:popupBackground="#2f4f4f"
+        android:spinnerMode="dropdown"
+        android:theme="@style/Spinner"
+        tools:ignore="RtlHardcoded" />
+    <Spinner
+        android:id="@+id/spinner3"
+        style="@style/Spinner"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/shape_drop_down_spinner3"
+        android:gravity="left"
+         android:popupBackground="#D3d3d3"
+        android:theme="@style/Spinner3"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/spinner" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editor_area"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/rounded_editext"
+        android:ems="10"
+        android:gravity="top"
+        android:hint=" I n p u t B o x"
+        android:inputType="textMultiLine"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <ImageButton
+        android:id="@+id/imageSave"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageOpen"
+        android:layout_alignParentEnd="true"
+        android:contentDescription=""
+        app:srcCompat="@mipmap/save"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageOpen"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_toStartOf="@+id/imageSave"
+        app:srcCompat="@mipmap/open"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageAdd"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imageOpen"
+        android:contentDescription=""
+        app:srcCompat="@mipmap/add"
+        tools:ignore="ContentDescription" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/imageAdd"
+        app:srcCompat="@mipmap/rotate"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/imageRun"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shell_run"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        tools:ignore="ContentDescription"
+        android:layout_alignTop="@+id/input1"
+        android:layout_toEndOf="@+id/imageAdd"
+        android:layout_marginStart="12dp" />
+
+    <Button
+        android:id="@+id/imageCompile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/browser"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="bold|italic"
+        android:typeface="sans"
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/linearLayout"
+        android:layout_toStartOf="@+id/imageRun" />  <!-- android:background="@drawable/rounded_editext" -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageRun"
+    android:gravity="bottom"
+    android:padding="1dip"
+    android:divider="@drawable/cus_but_div"
+    android:dividerPadding="@dimen/but_div"
+    android:showDividers="middle"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="37dp"
+    android:layout_alignParentStart="true"
+    android:id="@+id/linearLayout">
+    <Button
+        android:id="@+id/buttonTab"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile"
+        android:text="Tab" />
+
+    <Button
+        android:id="@+id/buttonCurly"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile"
+        android:text="{}" />
+
+    <Button
+        android:id="@+id/buttonDoubleQoutes"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile" />
+
+    <Button
+        android:id="@+id/buttonSemi"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile"
+        android:text=";" />
+
+    <Button
+        android:id="@+id/buttonLeftShift"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile" />
+
+    <Button
+        android:id="@+id/buttonRightShift"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile" />
+    <Button
+        android:id="@+id/buttonSingleQoute"
+        android:layout_width="45dp"
+        android:text="' '"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile" />
+
+    <Button
+        android:id="@+id/btnTag"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/input1"
+        android:layout_below="@+id/imageCompile"
+        android:layout_weight="1" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="1dip"
+        android:divider="@drawable/cus_but_div"
+        android:dividerPadding="@dimen/but_div"
+        android:showDividers="middle"
+        android:id="@+id/linearLayout1"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="37dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="61dp"
+            android:text="@string/clr"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/input1"
+            android:layout_below="@+id/imageCompile" />
+
+    </LinearLayout>
+
+
+
+    <!--android:background="#2f4f4f" -->
+
+</RelativeLayout>

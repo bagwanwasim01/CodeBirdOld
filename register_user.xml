@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f4f4f"
+    tools:context="com.example.wasim.compileit.register_user">
+
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:textColor="#fff"
+        android:importantForAutofill="no"
+        android:maxLength="20"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_marginStart="63dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_alignStart="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="9dp"
+        android:textColor="#fff"
+        android:maxLength="10"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:hint="Mobile"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_alignStart="@+id/editText8"
+        android:layout_below="@+id/editText8"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:importantForAutofill="no"
+        android:digits="@string/EmailV"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textFilter"
+        android:maxLength="35"/>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_alignStart="@+id/editText9"
+        android:layout_below="@+id/editText9"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:hint="Password"
+        android:digits="@string/PassV"
+        android:inputType="textFilter"
+        android:maxLength="8"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="-15dp"
+        android:background="@drawable/rounded_button"
+        android:text="Sign Up"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/cbPassR"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:paddingLeft="3dp"
+        android:layout_marginLeft="3dp"
+        android:text="Already have an account?"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/button2"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="ClickHere"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="italic|bold"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/editText10" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:background="@drawable/rounded_button"
+        android:text="User's list"
+        android:layout_marginLeft="-55dp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <CheckBox
+        android:id="@+id/cbPassR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:buttonTint="@color/colorWhite"
+        android:layout_marginRight="-15dp"
+        android:layout_alignBaseline="@+id/editText10"
+        android:layout_alignBottom="@+id/editText10"
+        android:layout_toEndOf="@+id/editText10" />
+
+</RelativeLayout>
